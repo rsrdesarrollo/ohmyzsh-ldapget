@@ -89,7 +89,7 @@ cp ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/ldapsearch/config/default.conf.sam
 
 ```bash
 # Basic LDAP search
-ldapget <objectclass> [<attrs>*] [-f <ldap_filter> | -z N | -H ldap_host | -b base_dn | --format <clean|bof|raw>] [@server]
+ldapget <objectclass> [-f <ldap_filter> | -z N | -H ldap_host | -b base_dn | --format <clean|bof|raw>] [<attrs>*] [@server]
 
 # Advanced search with custom filter
 ldapget computer -f "operatingSystem=*Server*" operatingSystem -E pr=1000/noprompt
