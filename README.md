@@ -99,10 +99,10 @@ ldapget computer -f "operatingSystem=*Server*" operatingSystem -E pr=1000/noprom
 
 ```bash
 # Convert LDIF to CSV
-ldif2csv input.ldif output.csv
+ldapget computer | ldap2csv
 
 # Convert LDIF to JSON
-ldif2json input.ldif output.json
+ldapget computer | ldap2json
 ```
 
 ## Contributing
