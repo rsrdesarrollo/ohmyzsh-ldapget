@@ -9,12 +9,18 @@ A plugin for Oh My Zsh that simplifies LDAP search operations and provides LDIF 
 - LDIF to JSON conversion
 - Configurable LDAP settings
 
+## Requirements
+
+- Python 3.x (required for LDIF conversion utilities)
+- Oh My Zsh
+- LDAP utils (ldapsearch command)
+
 ## Installation
 
 1. Clone this repository into your Oh My Zsh custom plugins directory:
 
 ```bash
-git clone https://github.com/username/ohmyzsh-ldapget.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/ldapget
+git clone https://github.com/rsrdesarrollo/ohmyzsh-ldapget.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/ldapget
 ```
 
 2. Add `ldapget` to your plugins array in `~/.zshrc`:
