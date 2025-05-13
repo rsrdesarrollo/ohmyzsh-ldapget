@@ -1,0 +1,14 @@
+LDAPSEARCH_OPTIONS="-Y GSSAPI"
+DEFAULT_FORMAT="clean"
+
+# Mandatory define default LDAP server and base DN
+
+#DEFAULT_LDAP_SERVER="hostname"
+#DEFAULT_BASE_DN='DC=acme,DC=local'
+
+# You can deffine secondary LDAP servers, they will be addressed with an @<name> argument
+## for example, you can deffine a develop server like so. Then you can address the server 
+## with the followinf command `ldapget user -f "samAccountName=test" @develop`
+
+#DEVELOP_LDAP_SERVER="dev_host"
+#DEVELOP_BASE_DN='DC=acme,DC=dev'
