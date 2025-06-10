@@ -24,6 +24,11 @@ function ldapget(){
     
     while [ $# -gt 0 ]; do
         case $1 in
+            --all)
+            shift # past argument
+            ARGS+=("-E")
+            ARGS+=("pr=1000/noprompt")
+            ;;
             --format)
             FORMAT="$2"
             shift # past argument
